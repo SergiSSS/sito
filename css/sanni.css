@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 1.5px;
+  background: rgb(34,30,108);
+  background:linear-gradient(180deg, rgb(71, 69, 105)15%, rgb(27, 33, 68) 47%, rgba(0,0,0,1) 89%);
+  height: 100%;
+  color:white;
+}
+.head_div{
+  background: rgb(5, 4, 21);
+  background:linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(8,17,65,1) 55%, rgb(5, 4, 21) 89%);
+  margin-bottom: 150px !important;
+}
+.body_div{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.chi{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+li {
+  list-style-type: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin:10px;
+}
+.bb{
+  border-right: 3px solid white;
+}
+a{
+  text-decoration: none;
+  color:#000000;
+}
+P{
+  padding: 5px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgb(112, 0, 0);
+}
+.form{
+  width:70%;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  color: aliceblue;
+}
+#pres, #expirience, #skills, #example {
+  margin-top: 100px;
+  padding:10px;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}  
+.bi{
+  font-size: 25px;
+  color:white;
+}
+#pres{
+  width: 100%;
+  text-align: center;
+}
+.text-pres, .accordion-body{
+  font-size: 13px;
+  text-transform: none;
+  font-family: 'Montserrat';
+  font-weight: 100 !important;
+  letter-spacing: normal;
+}
+.accordion-body, .accordion-item, .accordion-button{
+  background-color: transparent;
+  border:none;
+  color: white;
+}
+
+.accordion-button{
+  height: 90px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  transition: .3s ease-in-out;
+  border: none;
+  box-shadow: none;
+}
+.accordion-button::after, .accordion-button:before, .accordion-button:focus{
+  border:none;
+  outline: none;
+  box-shadow: none;
+}
+.accordion-button:hover{
+background-color: white;
+color:#000000;
+padding:20px;
+box-shadow: none;
+}
+.image-pres{
+  width: 100%;
+  height: auto;
+}
+
+.img {
+  border-radius: 25%;
+  border:1px solid white;
+}
+.text {
+  font-size: 24px;
+}
+.espe{
+  padding: 20px;
+  width: 100%;
+  margin-top: 50px;
+ /* background-color: rgb(112, 0, 0);*/
+  color:white !important;
+}
+
+#indice{
+  top:10%;
+  position: fixed;
+  background-color: transparent;
+  border-radius: 6px;
+  box-shadow: 1px;
+  line-height: 130%;
+  width:175px;
+  transition: .04s ease-in;
+}
+
+#expirience{
+  padding: 20px;
+  text-align: center;
+}
+#footer{
+  background-color: #000000;
+  height: 100px;
+  color:white;
+}
