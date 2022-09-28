@@ -12,7 +12,7 @@ body{
   background:linear-gradient(180deg, rgb(71, 69, 105)15%, rgb(27, 33, 68) 47%, rgba(0,0,0,1) 89%);
   height: 100%;
   color:white;
-}
+} 
 .head_div{
   background: rgb(5, 4, 21);
   background:linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(8,17,65,1) 55%, rgb(5, 4, 21) 89%);

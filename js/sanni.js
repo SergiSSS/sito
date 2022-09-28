@@ -14,3 +14,26 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 } 
+function sendEmail(){
+$.ajax({
+  type: 'POST',
+  url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+  data: {
+    key: "fez8C3-YBAmJDb94nYoZNg",
+    from_email: $('#email').val(),
+    message: {
+      "to":[
+          { 
+            "email": "sergiy.sannicandro@outlook.it",
+            "name": "RECIPIENT NAME (OPTIONAL)",
+            "type": "to"
+          }],
+      "autotext": true,
+      "html": $('#email').val() 
+    }
+  }
+ }).done(function(response) {
+   console.log(response); // if you're into that sorta thing
+ })
+ .catch(console.error())
+ ;}
