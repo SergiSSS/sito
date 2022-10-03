@@ -221,16 +221,15 @@ ul{
 .social{
   display: flex; 
   justify-content: flex-end;
+  margin-top: 70px;
 }
 .s{
   color:  #560404;
   font-size: 17px;
-  padding: 5px;
   transition: .3s ease-in-out;
 }
 .s:hover{
   color: #f1f1f1;
-  font-size: 15px;
 }
 li{
   padding: 5px;
@@ -248,6 +247,16 @@ li{
   }
   body{
     padding: 5px;
+  }
+  .sidenav{
+    top:45%;
+  }
+  .sidenav a{
+    font-size: 10px;
+    padding:5px;
+  }
+  .sidenav a:hover{
+    padding:5px;
   }
 }
 .input{
@@ -308,7 +317,6 @@ li{
   position: static;
   height: 90px;
   font-weight: bold;
-  text-align: center;
   text-transform: uppercase;
   font-family: 'Source Code Pro', monospace;
   letter-spacing: 1.5px;
