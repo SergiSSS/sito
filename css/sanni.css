@@ -157,6 +157,7 @@ img {
   padding: 10px;
   width: 50%;
   font-family: 'Inconsolata', monospace;
+  letter-spacing: .5px;
 }
 
 .col_img {
@@ -189,6 +190,7 @@ a, a:active, a:hover{
   box-shadow: 6px 10px 20px 9px #00000051;
 }
 h2{
+  margin-top: 50px;
   margin-bottom: 50px;
   font-weight: bolder;
   text-decoration:underline solid 3px #f1f1f1;
@@ -216,8 +218,50 @@ ul{
   font-size: 12px;
   font-weight: 100;
 }
+.social{
+  display: flex; 
+  justify-content: flex-end;
+}
+.s{
+  color:  #560404;
+  font-size: 17px;
+  padding: 5px;
+  transition: .3s ease-in-out;
+}
+.s:hover{
+  color: #f1f1f1;
+  font-size: 15px;
+}
 li{
   padding: 5px;
+}
+.border-d{
+  border-right:dotted 2px #f1f1f1;
+}
+@media (max-width: 650px) {
+#skills, .col_text, .col_img, .big,  .column.side,
+.column.middle {
+    width: 100%;
+  }
+  .border-d{
+    border: none;
+  }
+  body{
+    padding: 5px;
+  }
+}
+.input{
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 9px 16px 7px -3px #00000063;
+  outline: 0px;
+}
+.input:focus{
+  background-color: #0e0e0e;
+  color:#f1f1f1;
+  border: 1px solid #4a4a4a;
 }
 #contattami {
   background-color: transparent;
@@ -259,12 +303,7 @@ li{
   color: #560404;
   background-color: #f1f1f1;
 }
-@media (max-width: 600px) {
-  .column.side,
-  .column.middle {
-    width: 100%;
-  }
-}
+
 .accordion-button{
   position: static;
   height: 90px;

@@ -35,11 +35,12 @@
       <a href="#chi_sono">Chi Sono</a>
       <a href="#esperienza">Esperienza</a>
       <a href="#skills">Skills</a>
-      <a href="#">I Miei Lavori</a>
+      <!--<a href="#">I Miei Lavori</a>-->
       <a href="#contattami">Contattami</a>
     </div>
     <button class="openbtn" onclick="openNav()"><i class="bi bi-caret-right-fill"></i></button>
   </div>
+
   <div class="cont">
     <div class="image">
       <img src="css/2.sannicandro foto profilo (1).jpg">
@@ -48,6 +49,10 @@
       <h1 class="h">Sannicandro Sergiy </h1>
       <p class="p">front-end developer</p>
         <button class="btn_top"><a href="#contattami">CONTATTAMI</a></button>
+        <div class="social" style="margin-top: 65px; display: block; padding: 5px;">
+          <a href="https://www.linkedin.com/in/sergiy-sannicandro-a5a4091a1/" target="_blank"><i class="bi bi-linkedin s"></i></a>&nbsp;
+          <a href="https://www.facebook.com/sergiyskripan97" target="_blank"><i class="bi bi-facebook s"></i></a>
+        </div>
     </div>
   </div>
   <div class="row_my" id="chi_sono">
@@ -66,7 +71,7 @@
       <div class="col_img">
         <img class="img_io" src="css/io (1).jpg" alt="sannicandro_foto_profilo">
       </div>
-      <button style="position: relative; margin-top: 20px;"class="btn_top"  href="css/sannicandro cv[1372] (1).pdf">VEDI CV<i class="bi bi-filetype-pdf"></i></button>
+      <button style="position: relative; margin-top: 20px;"class="btn_top"><a href="css/sannicandro cv[1372] (1).pdf" download="Sannicandro"> VEDI CV&nbsp;<i class="bi bi-filetype-pdf"></i></a></button>
     </div>
     <div class="column side"></div>
   </div>
@@ -191,7 +196,7 @@
   <div id="skills">
     <h2>SKILLS</h2>
     <div class="row_my">
-      <div class="col_text" style="border-right:dotted 2px #f1f1f1">
+      <div class="col_text border-d">
         <h3 style="margin-left: 20px;">PERSONALI</h3>
         <ul>
           <li>PUNTALIALITà</li>
@@ -208,7 +213,7 @@
         </ul>
       </div>
       <div class="col_text">
-        <h3>PROFESSIONALI</h3>
+        <h3 style="margin-left: 20px;">PROFESSIONALI</h3>
         <ul>
           <li>HTML/CSS</li>
           <li>Java_Script</li>
@@ -230,21 +235,21 @@
         <h2 class="cc">Contattami</h2>
       <form class="my_form" id="contact">
           <label>Nome</label>
-          <input type="text" class="form-control" required id="name">
+          <input type="text" class="input" required id="name"><br>
           <label>Email</label>
-          <input type="text" class="form-control" required id="email">
+          <input type="text" class="input" required id="email"><br>
           <label>Messaggio</label>
-          <textarea type="text" class="form-control" required id="text" rows="7"></textarea>
+          <textarea type="text" class="input" required id="text" rows="7"></textarea>
           <div style="display: flex; justify-content: flex-end;">
           <button class="form-control" id="send">INVIA</button></div>
       </form>
-    <div class="btn-group justify-content-end align-content-end text-right" role="group" aria-label="Basic example">
-      <a class="btn" href="https://www.linkedin.com/in/sergiy-sannicandro" target="_blank"><i
-          class="bi bi-linkedin"></i></a>
-      <a class="btn" href="https://www.facebook.com/sergiyskripan97" target="_blank"><i class="bi bi-facebook"></i></a>
+  </div>
+  <div style="height: 40px; background-color: #060606">
+    <div class="social">
+      <a class="btn" href="https://www.linkedin.com/in/sergiy-sannicandro" target="_blank"><i class="bi bi-linkedin s"></i></a>
+      <a class="btn" href="https://www.facebook.com/sergiyskripan97" target="_blank"><i class="bi bi-facebook s"></i></a>
     </div>
   </div>
-  <div style="height: 40px; background-color: #060606"></div>
   <script type="text/javascript">
     (function () {
       emailjs.init("ysSL2NTq_nz0qgrka");
