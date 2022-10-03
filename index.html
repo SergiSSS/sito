@@ -20,24 +20,41 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata" rel="stylesheet">
   <!-- jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- emailjs-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
 <body>
-  <div class="container-fluid p-5 text-white d-flex justify-content-center mb-5 bg-dark bg-gradient">
-    <div class="p-2">
-      <img class="img" src="css/sannicandro foto profilo.jpg">
+  <div class="navbtn">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a><br>
+      <a href="#chi_sono">Chi Sono</a>
+      <a href="#esperienza">Esperienza</a>
+      <a href="#skills">Skills</a>
+      <a href="#">I Miei Lavori</a>
+      <a href="#contattami">Contattami</a>
     </div>
-    <div class="p-5">
-      <h1>Sannicandro Sergiy </h1>
-      <p>front-end developer</p>
+    <button class="openbtn" onclick="openNav()"><i class="bi bi-caret-right-fill"></i></button>
+  </div>
+  <div class="cont">
+    <div class="image">
+      <img src="css/2.sannicandro foto profilo (1).jpg">
+    </div>
+    <div class="text-heading">
+      <h1 class="h">Sannicandro Sergiy </h1>
+      <p class="p">front-end developer</p>
+        <button class="btn_top"><a href="#contattami">CONTATTAMI</a></button>
     </div>
   </div>
-  <div class="container-fluid mt-5 align-content-center justify-content-center body_div">
-    <div class="row mt-5 chi">
-      <h2 class="header align-content-center justify-content-center text-center">CHI SONO</h2>
-      <div class="col-lg-8 text-pres mt-5 align-content-middle">
+  <div class="row_my" id="chi_sono">
+    <div class="column side"></div>
+    <div class="column middle">
+      <h2>CHI SONO</h2>
+      <div class="col_text">
         Ciao, sono Sergiy e sono un giovane FRONT-END developer in ricerca di lavoro.<br>
         Ho 24 anni e sono nato in Ucraina, vivo in Italia da quasi 10 anni, ho frequentato una scuola supperiore
         d'indirizzo turistico. Dopo diploma ho partecipato al corso dell'arti all'uninverstita IULM di Milano.<br>
@@ -46,197 +63,209 @@
         Nel corso del tempo vorrei solo aumentare e megliorare le mie capictà e conoscenze del mondo web<br>
         Grazie alle mie esperienze ho capito che mi piace creare le applicazione web.
       </div>
-      <div class="col-md-2 mt-5 ">
-        <img src="css/io (1).jpg" alt="sannicandro_foto_profilo" width="250px">
+      <div class="col_img">
+        <img class="img_io" src="css/io (1).jpg" alt="sannicandro_foto_profilo">
       </div>
+      <button style="position: relative; margin-top: 20px;"class="btn_top"  href="css/sannicandro cv[1372] (1).pdf">VEDI CV<i class="bi bi-filetype-pdf"></i></button>
     </div>
-    <div class="col-lg-12">
-      <div class="accordion" id="expirience">
-        <h2 class="header">ESPERIENZA</h2>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingBE-SIMPLE">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#BE-SIMPLE" aria-expanded="false" aria-controls="BE-SIMPLE">
-              BE-SIMPLE
-            </button>
-          </h2>
-          <div id="BE-SIMPLE" class="accordion-collapse collapse" aria-labelledby="headingBE-SIMPLE"
-            data-bs-parent="#expirience">
-            <div class="accordion-body">
-              Ho svolto varie attività al sviluppo delle web-app. Le principali sono l'area admin per prenotare.app<br>
-              1. l'area admin prennotare.app<br>
-              2. le sezione delle risorse e servizi prenotare.app<br>
-              3. simple serial number e whatsappsender app per zendesk.<br>
-              In ultime 3 applicazione il mio compito era d'implementazione del codice in base alle richieste.
-              L'area admin è una applicazione fatta con tema di Bootsrap in particolare frash-fon v2.0<br>
-              In tutte l'app ho usato l'API forniti.</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingGP">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseGP" aria-expanded="false" aria-controls="collapseGP">
-              GRAN PREMIO
-            </button>
-          </h2>
-          <div id="collapseGP" class="accordion-collapse collapse" aria-labelledby="headingGP"
-            data-bs-parent="#expirience">
-            <div class="accordion-body">
-              Da diversi anni partecipo al GranPremio di monza comne addeto alla sicurezza.<br>
-              Nei miei obblighi rietrava controllo dei bigliertti e la sicurezza </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingunisalus">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseunisalus" aria-expanded="false" aria-controls="collapseunisalus">
-              UNISALUS
-            </button>
-          </h2>
-          <div id="collapseunisalus" class="accordion-collapse collapse" aria-labelledby="headingunisalus"
-            data-bs-parent="#expirience">
-            <div class="accordion-body">
-              Creazione e sviluppo del piano editoriale per le pagine di Facebook e Instagram
-              - Gestione della scheda Business Suite
-              - Sviluppo delle strategie di link building
-              - Creazione materiale per link building
-              - Monitoraggio e gestione del accaunt googleMyBusiness</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingPRODICE">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapsePRODICE" aria-expanded="false" aria-controls="collapsePRODICE">
-              PRODICE
-            </button>
-          </h2>
-          <div id="collapsePRODICE" class="accordion-collapse collapse" aria-labelledby="headingPRODICE"
-            data-bs-parent="#expirience">
-            <div class="accordion-body">
-              Ho collaborato con altri colleghi sulla parte della SEO scrivendo vari testi per clienti, directory. Ho
-              creato delle campagne marketing con il strumento di Google Ads. Sviluppo e creazioni dei siti e landing
-              page
-              con cms WordPress(elementor). Ho fatto anche delle locandine per i social con promozioni di eventi di
-              clienti. Uso di mailchimp per le compagne di newsletter. Ho acquisito le competenze nel HTML5, CSS3 e
-              javascript (ES6) e ho imparato usare la libreria jquery </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingHAM">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseHAMERICAS" aria-expanded="false" aria-controls="collapseHAMERICAS">
-              HAMERICAS
-            </button>
-          </h2>
-          <div id="collapseHAMERICAS" class="accordion-collapse collapse" aria-labelledby="headingHAMERICAS"
-            data-bs-parent="#expirience">
-            <div class="accordion-body">
-              Svolgevo mansioni di pre e post servizio, apertura e la chiusura cassa giornaliera/turno e varie pulizie e
-              sistemazioni in sala e dietro il bancone. Oltre mi occupavo della gestione di clientela in sala e
-              accoglienza,
-              servizio al tavolo, prendevo ordini consigliando in base alle preferenze del cliente. Ho dovuto anche
-              mettere
-              in pratica le mie conoscenze linguistiche in particolare l’inglese dato che veniva alto numero di turisti.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="STAGE">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#STAGE"
-              aria-expanded="false" aria-controls="STAGE">
-              STAGE SVOLTI IN VARI ALBERGHI
-            </button>
-          </h2>
-          <div id="STAGE" class="accordion-collapse collapse" aria-labelledby="STAGE" data-bs-parent="#expirience">
-            <div class="accordion-body">
-              All'interno del programma di stage previsto dal mio percorso scolastico, ho svolto presso diverse
-              struttura
-              attività come operatore di reception (accoglienza clienti)</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headinged">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ed"
-              aria-expanded="false" aria-controls="ed">
-              Manovale edile Edilizia Adige
-            </button>
-          </h2>
-          <div id="ed" class="accordion-collapse collapse" aria-labelledby="headinged" data-bs-parent="#expirience">
-            <div class="accordion-body">
-              Ho svolto, durante il periodo estivo, un lavoro come manovale edile </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card shadow p-3 mb-5 bg-white rounded bg-transparent border-0">
-      <div class="card-header bg-transparent justify-content-center align-content-center">
-        <h2 class="header align-content-center justify-content-center text-center"> MIE SKILL</h2>
-      </div>
-      <div class="card-body">
-        <div class="row">
-          <div class="col">
-            <h3 class="header text-center mb-5">PERSONALI</h3>
-            <ul class="bbf">
-              <li>PUNTALIALITà</li>
-              <li>ORGANIZZAZIONE</li>
-              <li>PRECISIONE</li>
-              <li>PROFFESIONALITà</li> 
-              <li>ATTENZIONE</li>
-              <li>LAVORO IN SQUADRA</li>
-              <li>Flessibilità</li>
-              <li>Competenze sociali</li>
-              <li>Apprendimento attivo</li>
-              <li>Resilienza e capacità di adattamento </li>
-              <li>Self-Teaching</li>
-            </ul>
-          </div>
-          <div class="col">
-            <h3 class="header text-center mb-5">PROFESSIONALI</h3>
-            <ul>
-              <li>HTML/CSS</li>
-              <li>Java_Script</li>
-              <li>JSON</li>
-              <li>JQuery</li>
-              <li>REST_API</li>
-              <li>Testing/Debugging</li>
-              <li>Browser_Developer_Tools</li>
-              <li>Responsive_Design</li>
-              <li>DOM_Manipulation</li>
-              <li>REACT</li>
-              <li>WordPress</li>
-              <li>Bootsrap</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer bg-transparent justify-content-center">
-        <div class="card bg-transparent">
-          <div class="card-header">
-            <h2>Contattami</h2>
-          </div>
-          <form class="form-control form">
-            <div class="card-body">
-              <label>Nome</label>
-              <input type="text" class="form-control" required id="name"> 
-              <label>Email</label>
-              <input type="text" class="form-control" required id="email">
-              <label>Messaggio</label>
-              <input type="text" class="form-control" required id="text">
-            </div>
-            <div class="card-footer">
-              <button type="submit" class="form-control" onclick="sendEmail()">INVIA</button>
-            </div>
-          </form>
-        </div>
-        <div class="btn-group justify-content-end align-content-end text-right" role="group" aria-label="Basic example">
-          <a class="btn" href="https://www.linkedin.com/in/sergiy-sannicandro" target="_blank"><i
-              class="bi bi-linkedin"></i></a>
-          <a class="btn" href="https://www.facebook.com/sergiyskripan97" target="_blank"><i
-              class="bi bi-facebook"></i></a>
-        </div>
-      </div>
+    <div class="column side"></div>
   </div>
+  <div class="big" id="esperienza">
+    <h2>ESPERIENZA</h2>
+    <div class="accordion border-0"  id="expirience" style="box-shadow:2rem -1rem 19px 4px rgb(10 7 7 / 20%); border-radius: 7px;">
+      <div class="accordion-item bg-gradient text-light ">
+        <h3 class="accordion-header" id="headingBE-SIMPLE">
+          <button class="bg-gradient text-light accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#BE-SIMPLE" aria-expanded="false" aria-controls="BE-SIMPLE">
+            BE-SIMPLE
+          </button>
+        </h3>
+        <div id="BE-SIMPLE" class="accordion-collapse collapse" aria-labelledby="headingBE-SIMPLE"
+          data-bs-parent="#expirience">
+          <div class="accordion-body">
+            Ho svolto varie attività al sviluppo delle web-app. Le principali sono l'area admin per prenotare.app<br>
+            1. l'area admin prennotare.app<br>
+            2. le sezione delle risorse e servizi prenotare.app<br>
+            3. simple serial number e whatsappsender app per zendesk.<br>
+            In ultime 3 applicazione il mio compito era d'implementazione del codice in base alle richieste.
+            L'area admin è una applicazione fatta con tema di Bootsrap in particolare frash-fon v2.0<br>
+            In tutte l'app ho usato l'API forniti.</div>
+        </div>
+      </div>
+      <div class="accordion-item bg-gradient text-light">
+        <h3 class="accordion-header" id="headingGP">
+          <button class="bg-gradient text-light accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseGP" aria-expanded="false" aria-controls="collapseGP">
+            GRAN PREMIO
+          </button>
+        </h3>
+        <div id="collapseGP" class="accordion-collapse collapse" aria-labelledby="headingGP"
+          data-bs-parent="#expirience">
+          <div class="accordion-body">
+            Da diversi anni partecipo al GranPremio di monza comne addeto alla sicurezza.<br>
+            Nei miei obblighi rietrava controllo dei bigliertti e la sicurezza </div>
+        </div>
+      </div>
+      <div class="accordion-item bg-gradient text-light">
+        <h3 class="accordion-header" id="headingunisalus">
+          <button class="bg-gradient text-light accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseunisalus" aria-expanded="false" aria-controls="collapseunisalus">
+            UNISALUS
+          </button>
+        </h3>
+        <div id="collapseunisalus" class="accordion-collapse collapse" aria-labelledby="headingunisalus"
+          data-bs-parent="#expirience">
+          <div class="accordion-body">
+            Creazione e sviluppo del piano editoriale per le pagine di Facebook e Instagram
+            - Gestione della scheda Business Suite
+            - Sviluppo delle strategie di link building
+            - Creazione materiale per link building
+            - Monitoraggio e gestione del accaunt googleMyBusiness</div>
+        </div>
+      </div>
+      <div class="accordion-item bg-gradient text-light">
+        <h3 class="accordion-header" id="headingPRODICE">
+          <button class="bg-gradient text-light accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapsePRODICE" aria-expanded="false" aria-controls="collapsePRODICE">
+            PRODICE
+          </button>
+        </h3>
+        <div id="collapsePRODICE" class="accordion-collapse collapse" aria-labelledby="headingPRODICE"
+          data-bs-parent="#expirience">
+          <div class="accordion-body">
+            Ho collaborato con altri colleghi sulla parte della SEO scrivendo vari testi per clienti, directory. Ho
+            creato delle campagne marketing con il strumento di Google Ads. Sviluppo e creazioni dei siti e landing
+            page
+            con cms WordPress(elementor). Ho fatto anche delle locandine per i social con promozioni di eventi di
+            clienti. Uso di mailchimp per le compagne di newsletter. Ho acquisito le competenze nel HTML5, CSS3 e
+            javascript (ES6) e ho imparato usare la libreria jquery </div>
+        </div>
+      </div>
+      <div class="accordion-item bg-gradient text-light">
+        <h3 class="accordion-header" id="headingHAM">
+          <button class="bg-gradient text-light accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseHAMERICAS" aria-expanded="false" aria-controls="collapseHAMERICAS">
+            HAMERICAS
+          </button>
+        </h3>
+        <div id="collapseHAMERICAS" class="accordion-collapse collapse" aria-labelledby="headingHAMERICAS"
+          data-bs-parent="#expirience">
+          <div class="accordion-body">
+            Svolgevo mansioni di pre e post servizio, apertura e la chiusura cassa giornaliera/turno e varie pulizie e
+            sistemazioni in sala e dietro il bancone. Oltre mi occupavo della gestione di clientela in sala e
+            accoglienza,
+            servizio al tavolo, prendevo ordini consigliando in base alle preferenze del cliente. Ho dovuto anche
+            mettere
+            in pratica le mie conoscenze linguistiche in particolare l’inglese dato che veniva alto numero di turisti.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item bg-gradient text-light">
+        <h3 class="accordion-header" id="headingSTAGE">
+          <button class="bg-gradient text-light accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#STAGE" aria-expanded="false" aria-controls="STAGE">
+            STAGE SVOLTI IN VARI ALBERGHI
+          </button>
+        </h3>
+        <div id="STAGE" class="accordion-collapse collapse" aria-labelledby="STAGE" data-bs-parent="#expirience">
+          <div class="accordion-body">
+            All'interno del programma di stage previsto dal mio percorso scolastico, ho svolto presso diverse
+            struttura
+            attività come operatore di reception (accoglienza clienti)</div>
+        </div>
+      </div>
+      <div class="accordion-item bg-gradient text-light">
+        <h3 class="accordion-header" id="headinged">
+          <button class="bg-gradient text-light accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#ed" aria-expanded="false" aria-controls="ed">
+            Manovale edile Edilizia Adige
+          </button>
+        </h3>
+        <div id="ed" class="accordion-collapse collapse" aria-labelledby="headinged" data-bs-parent="#expirience">
+          <div class="accordion-body">
+            Ho svolto, durante il periodo estivo, un lavoro come manovale edile </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="skills">
+    <h2>SKILLS</h2>
+    <div class="row_my">
+      <div class="col_text" style="border-right:dotted 2px #f1f1f1">
+        <h3 style="margin-left: 20px;">PERSONALI</h3>
+        <ul>
+          <li>PUNTALIALITà</li>
+          <li>ORGANIZZAZIONE</li>
+          <li>PRECISIONE</li>
+          <li>PROFFESIONALITà</li>
+          <li>ATTENZIONE</li>
+          <li>LAVORO IN SQUADRA</li>
+          <li>Flessibilità</li>
+          <li>Competenze sociali</li>
+          <li>Apprendimento attivo</li>
+          <li>Resilienza e capacità di adattamento </li>
+          <li>Self-Teaching</li>
+        </ul>
+      </div>
+      <div class="col_text">
+        <h3>PROFESSIONALI</h3>
+        <ul>
+          <li>HTML/CSS</li>
+          <li>Java_Script</li>
+          <li>JSON</li>
+          <li>JQuery</li>
+          <li>REST_API</li>
+          <li>Testing/Debugging</li>
+          <li>Browser_Developer_Tools</li>
+          <li>Responsive_Design</li>
+          <li>DOM_Manipulation</li>
+          <li>REACT</li>
+          <li>WordPress</li>
+          <li>Bootsrap</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="contattami">
+        <h2 class="cc">Contattami</h2>
+      <form class="my_form" id="contact">
+          <label>Nome</label>
+          <input type="text" class="form-control" required id="name">
+          <label>Email</label>
+          <input type="text" class="form-control" required id="email">
+          <label>Messaggio</label>
+          <textarea type="text" class="form-control" required id="text" rows="7"></textarea>
+          <div style="display: flex; justify-content: flex-end;">
+          <button class="form-control" id="send">INVIA</button></div>
+      </form>
+    <div class="btn-group justify-content-end align-content-end text-right" role="group" aria-label="Basic example">
+      <a class="btn" href="https://www.linkedin.com/in/sergiy-sannicandro" target="_blank"><i
+          class="bi bi-linkedin"></i></a>
+      <a class="btn" href="https://www.facebook.com/sergiyskripan97" target="_blank"><i class="bi bi-facebook"></i></a>
+    </div>
+  </div>
+  <div style="height: 40px; background-color: #060606"></div>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("ysSL2NTq_nz0qgrka");
+    })();
+  </script>
+  <script>
+    document.getElementById('send').addEventListener('click', (function (event) {
+      event.preventDefault()
+      var templateParams = {
+        email: $('#email').val().toString(),
+        name: $('#name').val().toString(),
+        text: $('#text').val().toString()
+      };
+      emailjs.send('service_g05xx6s', 'template_hkp2u1z', templateParams)
+        .then(function (response) {
+          alert('SUCCESS!', response.status, response.text);
+        }, function (error) {
+          alert('FAILED...', error);
+        })
+    }))
+  </script>
   <script src="js/sanni.js"></script>
 </body>
 
